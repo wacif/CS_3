@@ -6,9 +6,6 @@ Description: Initial release
 
 # Lecture 19: Stages of Natural Language Processing (NLP) with APIs, NLTK, and spaCy
 
-Natural Language Processing (NLP) is the area of computer science that focuses on enabling computers to understand and interact with human language. Here’s a simple overview of the stages involved in NLP, along with examples of how these stages are handled by libraries like NLTK and spaCy, and how they can be exposed through APIs.
-
----
 
 ## Introduction
 
@@ -68,6 +65,9 @@ text = "Natural Language Processing is fascinating."
 tokens = word_tokenize(text)
 print(tokens)
 ```
+
+Here’s a simple overview of the stages involved in NLP, along with examples of how these stages are handled by libraries like NLTK and spaCy, and how they can be exposed through APIs.
+
 ## 1. Text Acquisition
 
 - **Description**: Collecting the text data you want to process.
