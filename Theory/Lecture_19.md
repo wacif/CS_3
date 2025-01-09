@@ -65,6 +65,38 @@ text = "Natural Language Processing is fascinating."
 tokens = word_tokenize(text)
 print(tokens)
 ```
+---
+
+## Part 3: spaCy
+
+### What is spaCy?
+- **spaCy** is a high-performance Python library for industrial-grade NLP.
+- Designed with speed and usability in mind, it is widely used in real-world applications.
+
+### Key Features of spaCy
+1. **Efficient Tokenization**: Fast and accurate breaking of text into tokens.
+2. **Named Entity Recognition (NER)**: Identifies entities like names, dates, monetary values, etc.
+3. **Dependency Parsing**: Analyzes syntactic relationships between words in a sentence.
+4. **Pretrained Models**: Provides access to large pretrained language models tailored for various tasks.
+5. **Custom Pipelines**: Enables building and integrating custom NLP workflows.
+
+---
+
+### Example: Using spaCy for Named Entity Recognition (NER)
+```python
+import spacy
+
+# Load the spaCy language model
+nlp = spacy.load("en_core_web_sm")
+
+# Analyze text
+doc = nlp("Apple is looking at buying U.K. startup for $1 billion.")
+
+# Extract entities
+for ent in doc.ents:
+    print(ent.text, ent.label_)
+```
+
 
 Here’s a simple overview of the stages involved in NLP, along with examples of how these stages are handled by libraries like NLTK and spaCy, and how they can be exposed through APIs.
 
